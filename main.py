@@ -8,6 +8,8 @@ Fisher D.
 
 def triangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
+    responsible person: Popov I.
+
     :param x:
     :param y:
     :param a:
@@ -22,6 +24,8 @@ def triangle(x, y, a, b, angle, fill_color, border_color, border_width):
 
 def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
+    responsible person: Fisher D.
+
     :param x:
     :param y:
     :param a:
@@ -36,6 +40,8 @@ def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
 
 def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
+    responsible person: Fedyakin D.
+
     :param x:
     :param y:
     :param a:
