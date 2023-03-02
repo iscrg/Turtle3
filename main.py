@@ -8,8 +8,6 @@ Fisher D.
 
 def triangle(x, y, a, b):
     '''
-    Cat
-    Dog
     :param x:
     :param y:
     :param a:
