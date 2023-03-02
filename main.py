@@ -18,6 +18,7 @@ def triangle(x, y, a, b):
     pass
 
 def draw_dog():
+    '''Fedya zdes'''
     pass
 
 def draw_cat():
