@@ -6,23 +6,46 @@ Fedyakin D.
 Fisher D.
 '''
 
-def triangle(x, y, a, b):
+def triangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
-    Cat
-    Dog
     :param x:
     :param y:
     :param a:
     :param b:
-    :return:
+    :param angle:
+    :param fill_color: Fill color
+    :param border_color: Border color
+    :border_width: Border width
+    :return: None
     '''
     pass
 
-def draw_dog():
-    '''Fedya zdes'''
+def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
+    '''
+    :param x:
+    :param y:
+    :param a:
+    :param b:
+    :param angle:
+    :param fill_color: Fill color
+    :param border_color: Border color
+    :border_width: Border width
+    :return: None
+    '''
     pass
 
-def draw_cat():
+def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
+    '''
+    :param x:
+    :param y:
+    :param a:
+    :param b:
+    :param angle:
+    :param fill_color: Fill color
+    :param border_color: Border color
+    :border_width: Border width
+    :return: None
+    '''
     pass
 
 def main():
@@ -30,9 +53,6 @@ def main():
     Main function
     :return: None
     '''
-
-    draw_cat()
-    draw_dog()
 
 if __name__ == '__main__':
     main()
