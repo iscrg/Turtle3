@@ -36,20 +36,35 @@ def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
     :border_width: Border width
     :return: None
     '''
-    import turtle
-    import math
 
-    turtle.color(border_color,fill_color)
-    turtle.rt(angle)
+    turtle.color(border_color, fill_color)
     turtle.begin_fill()
     turtle.pensize(border_width)
+    turtle.pu()
+    turtle.goto(x, y)
+    turtle.pd()
+    '''
+    turtle.rt(angle)
+    turtle.circle(a, 45)
+    turtle.circle(b, 90)
+    turtle.circle(a, 90)
+    turtle.circle(b, 90)
+    turtle.circle(a, 45)
+    turtle.lt(angle)
+    '''
+    import math
+
+    turtle.rt(angle)
+    turtle.color(border_color, fill_color)
+    turtle.pensize(border_width)
+
     for degree in range(361):
         rad = math.radians(degree)
         dx = a * math.sin(rad) + x
         dy = -b * math.cos(rad) + b + y
         turtle.goto(dx, dy)
+
     turtle.end_fill()
-    turtle.done()
 
 def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
