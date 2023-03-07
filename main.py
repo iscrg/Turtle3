@@ -39,14 +39,17 @@ def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
     import turtle
     import math
 
+    turtle.color(border_color,fill_color)
     turtle.rt(angle)
-    turtle.color(border_color, fill_color)
+    turtle.begin_fill()
     turtle.pensize(border_width)
     for degree in range(361):
         rad = math.radians(degree)
-        x = a * math.sin(rad) + x
-        y = -b * math.cos(rad) + b + y
-        turtle.goto(x, y)
+        dx = a * math.sin(rad) + x
+        dy = -b * math.cos(rad) + b + y
+        turtle.goto(dx, dy)
+    turtle.end_fill()
+    turtle.done()
 
 def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
