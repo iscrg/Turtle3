@@ -1,3 +1,4 @@
+
 '''
 Title: eto rossiya!!!
 Group:
@@ -5,7 +6,7 @@ Popov I.
 Fedyakin D.
 Fisher D.
 '''
-
+from turtle import *
 def triangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
     responsible person: Popov I.
@@ -80,12 +81,35 @@ def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
     :border_width: Border width
     :return: None
     '''
-    pass
+    pu()
+    setx(x)
+    sety(y)
+    pd()
+    rt(angle)
+    pensize(border_width)
+    color(border_color, fill_color)
+    begin_fill()
+    for i in range(2):
+        fd(a)
+        rt(90)
+        fd(b)
+        rt(90)
+    end_fill()
 
 def main():
     '''
     Main function
     :return: None
+    '''
+
+    '''
+    rectangle(-400, 400, 800, 300, 0, 'lightskyblue', '', 0)
+    rectangle(-400, 100, 800, 500, 0, 'olivedrab3', '', 0)
+    rectangle(-300, 50, 30, 40, 0, 'brown', 'black', 3)
+    rectangle(-220, 150, 15, 105, 0, 'brown', 'black', 2)
+    rectangle(-60, 85, 20, 20, 0, 'brown', 'black', 1)
+    rectangle(300, 90, 20, 20, 0, 'brown', 'black', 1)
+    done()
     '''
 
 if __name__ == '__main__':
