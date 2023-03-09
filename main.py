@@ -100,6 +100,17 @@ def main():
     :return: None
     '''
 
+    import turtle
+    import math
+    screen = turtle.Screen()
+    screen.setup(800, 800)
+    screen.tracer(0, 0)
+
+    turtle.speed(0)
+    # turtle.hideturtle()
+    # turtle.up()
+    turtle.shape('turtle')
+
     rectangle(-400, 400, 800, 300, 0, 'lightskyblue', '', 0)
     rectangle(-400, 100, 800, 500, 0, 'olivedrab3', '', 0)
     rectangle(-300, 50, 30, 40, 0, 'brown', 'black', 3)
@@ -111,6 +122,32 @@ def main():
     ellipse(-205,210,20,20,0,'red','black',2)
     ellipse(-160,260,20,20,0,'red','black',2)
     ellipse(-205,300,20,20,0,'red','black',2)
+
+
+
+    ellipse(160, 20, 100, 100, 0, "DarkGrey", "black", 2)
+
+    ellipse(125, 25, 20, 30, 2, "white", "black", 2)
+    ellipse(125, 21, 13, 13, 0, "blue4", "blue4", 2)
+    ellipse(125, 21, 10, 10, 0, "black", "black", 2)
+
+    ellipse(201, 27, 20, 30, 2, "white", "black", 2)
+    ellipse(201, 23, 13, 13, 0, "blue4", "blue4", 2)
+    ellipse(201, 23, 10, 10, 0, "black", "black", 2)
+
+    ellipse(163, -7, 54, 30, 2, "white", "black", 2)
+    ellipse(163, 5, 18, 6, 2, "black", "black", 2)
+
+    rectangle(162, 5, 2, 30, 0, "black", "black", 1)
+
+    ellipse(180, -10, 2, 2, 0, "black", "black", 1)
+    ellipse(194, -4, 2, 2, 0, "black", "black", 1)
+    ellipse(194, -16, 2, 2, 0, "black", "black", 1)
+
+    ellipse(143, -10, 2, 2, 0, "black", "black", 1)
+    ellipse(129, -4, 2, 2, 0, "black", "black", 1)
+    ellipse(129, -16, 2, 2, 0, "black", "black", 1)
+
     turtle.done()
 
 if __name__ == '__main__':
