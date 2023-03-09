@@ -74,8 +74,20 @@ def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
     :return: None
 
     '''
-    pass
-
+    turtle.pu()
+    turtle.setx(x)
+    turtle.sety(y)
+    turtle.pd()
+    turtle.rt(angle)
+    turtle.pensize(border_width)
+    turtle.color(border_color, fill_color)
+    turtle.begin_fill()
+    for i in range(2):
+        turtle.fd(a)
+        turtle.rt(90)
+        turtle.fd(b)
+        turtle.rt(90)
+    turtle.end_fill()
 def main():
     '''
     Main function
