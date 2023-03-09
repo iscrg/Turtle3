@@ -7,6 +7,10 @@ Fisher D.
 '''
 import turtle as turtle
 import math
+screen = turtle.Screen()
+screen.setup(800, 800)
+screen.tracer(0,0)
+turtle.speed(0)
 
 def triangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
@@ -95,6 +99,19 @@ def main():
     Main function
     :return: None
     '''
+
+    rectangle(-400, 400, 800, 300, 0, 'lightskyblue', '', 0)
+    rectangle(-400, 100, 800, 500, 0, 'olivedrab3', '', 0)
+    rectangle(-300, 50, 30, 40, 0, 'brown', 'black', 3)
+    rectangle(-220, 150, 15, 105, 0, 'brown', 'black', 2)
+    rectangle(-60, 85, 20, 20, 0, 'brown', 'black', 1)
+    rectangle(300, 90, 20, 20, 0, 'brown', 'black', 1)
+    ellipse(-215,250,100,100,0,'chartreuse3','black',2)
+    ellipse(-270,255,20,20,0,'red','black',2)
+    ellipse(-205,210,20,20,0,'red','black',2)
+    ellipse(-160,260,20,20,0,'red','black',2)
+    ellipse(-205,300,20,20,0,'red','black',2)
+    turtle.done()
 
 if __name__ == '__main__':
     main()
