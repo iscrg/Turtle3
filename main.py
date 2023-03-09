@@ -26,8 +26,8 @@ def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
     responsible person: Fisher D.
 
-    :param x: X start coordinate
-    :param y: Y start coordinate
+    :param x: X coordinate centre of ellipse
+    :param y: Y coordinate centre of ellipse
     :param a: ellipse lenght
     :param b: ellipse width
     :param angle: angle of inclination
@@ -40,31 +40,24 @@ def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
     turtle.color(border_color, fill_color)
     turtle.begin_fill()
     turtle.pensize(border_width)
-    turtle.pu()
-    turtle.goto(x, y)
-    turtle.pd()
-    '''
-    turtle.rt(angle)
-    turtle.circle(a, 45)
-    turtle.circle(b, 90)
-    turtle.circle(a, 90)
-    turtle.circle(b, 90)
-    turtle.circle(a, 45)
-    turtle.lt(angle)
-    '''
-    import math
 
-    turtle.rt(angle)
-    turtle.color(border_color, fill_color)
-    turtle.pensize(border_width)
+    n = 10000
+    t = 0
+    dx = x + a * math.cos(t) * math.cos(math.radians(angle)) - b * math.sin(t) * math.sin(math.radians(angle))
+    dy = y + a * math.cos(t) * math.sin(math.radians(angle)) + b * math.sin(t) * math.cos(math.radians(angle))
+    turtle.up()
+    turtle.goto(dx, dy)
+    turtle.down()
 
-    for degree in range(361):
-        rad = math.radians(degree)
-        dx = a * math.sin(rad) + x
-        dy = -b * math.cos(rad) + b + y
+    for i in range(n):
+        dx = x + a * math.cos(t) * math.cos(math.radians(angle)) - b * math.sin(t) * math.sin(math.radians(angle))
+        dy = y + a * math.cos(t) * math.sin(math.radians(angle)) + b * math.sin(t) * math.cos(math.radians(angle))
         turtle.goto(dx, dy)
+        t += 2 * math.pi / n
 
     turtle.end_fill()
+
+
 
 def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
@@ -90,3 +83,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
