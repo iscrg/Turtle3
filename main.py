@@ -123,6 +123,8 @@ def main():
     ellipse(-160,260,20,20,0,'red','black',2)
     ellipse(-205,300,20,20,0,'red','black',2)
 
+    ellipse(20, -60, 150, 110, 10, "LightGrey", "black", 2)
+
     ellipse(70, 160, 35, 100, 23, "LightGrey", "black", 2)
     ellipse(80, 139, 28, 80, 23, "LightPink", "black", 2)
 
