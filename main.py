@@ -5,6 +5,8 @@ Popov I.
 Fedyakin D.
 Fisher D.
 '''
+import turtle as turtle
+import math
 
 def triangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
