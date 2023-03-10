@@ -5,28 +5,56 @@ Popov I.
 Fedyakin D.
 Fisher D.
 '''
+
 import turtle as turtle
 import math
+
+#turtle settings
 screen = turtle.Screen()
 screen.setup(800, 800)
 screen.tracer(0,0)
 turtle.speed(0)
+turtle.shape('turtle')
 
-def triangle(x, y, a, b, angle, fill_color, border_color, border_width):
+
+def triangle(x, y, sd_lngth_a, sd_lngth_b, sd_lngth_c, angle_main, fill_clr, brdr_clr, brdr_wdth):
     '''
-    responsible person: Popov I.
-
-    :param x:
-    :param y:
-    :param a:
-    :param b:
-    :param angle:
-    :param fill_color: Fill color
-    :param border_color: Border color
-    :border_width: Border width
+    :param x: X coordinate
+    :param y: Y coordinate
+    :param sd_lngth_a: A side length
+    :param sd_lngth_b: B side length
+    :param sd_lngth_c: C side length
+    :param angle_main: The angle of rotation of the figure
+    :param fill_clr: Fill color
+    :param brdr_clr: Border color
+    :param brdr_wdth: Border width
     :return: None
     '''
-    pass
+    angle_a = math.degrees(
+        math.acos((sd_lngth_b ** 2 + sd_lngth_c ** 2 - sd_lngth_a ** 2) / 2 * sd_lngth_b * sd_lngth_c))
+    angle_b = math.degrees(
+        math.acos((sd_lngth_a ** 2 + sd_lngth_c ** 2 - sd_lngth_b ** 2) / (2 * sd_lngth_a * sd_lngth_c)))
+    angle_c = 360 - angle_a - angle_b
+
+    turtle.pu()
+
+    turtle.color(brdr_clr, fill_clr)
+    turtle.pensize(brdr_wdth)
+    turtle.goto(x, y)
+    turtle.begin_fill()
+
+    turtle.pd()
+
+    turtle.lt(angle_main)
+
+    turtle.fd(sd_lngth_b)
+    turtle.rt(angle_a)
+    turtle.fd(sd_lngth_c)
+    turtle.rt(180 - angle_b)
+    turtle.fd(sd_lngth_a)
+
+    turtle.end_fill()
+
 
 def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
@@ -64,7 +92,6 @@ def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
     turtle.end_fill()
 
 
-
 def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
     '''
     responsible person: Fedyakin D.
@@ -94,22 +121,13 @@ def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
         turtle.fd(b)
         turtle.rt(90)
     turtle.end_fill()
+
+
 def main():
     '''
     Main function
     :return: None
     '''
-
-    import turtle
-    import math
-    screen = turtle.Screen()
-    screen.setup(800, 800)
-    screen.tracer(0, 0)
-
-    turtle.speed(0)
-    # turtle.hideturtle()
-    # turtle.up()
-    turtle.shape('turtle')
 
     rectangle(-400, 400, 800, 300, 0, 'lightskyblue', '', 0)
     rectangle(-400, 100, 800, 500, 0, 'olivedrab3', '', 0)
