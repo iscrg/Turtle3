@@ -30,12 +30,25 @@ def triangle(x, y, sd_lngth_a, sd_lngth_b, sd_lngth_c, angle_main, fill_clr, brd
     :param brdr_wdth: Border width
     :return: None
     '''
-    angle_a = math.degrees(
-        math.acos((sd_lngth_b ** 2 + sd_lngth_c ** 2 - sd_lngth_a ** 2) / 2 * sd_lngth_b * sd_lngth_c))
-    angle_b = math.degrees(
-        math.acos((sd_lngth_a ** 2 + sd_lngth_c ** 2 - sd_lngth_b ** 2) / (2 * sd_lngth_a * sd_lngth_c)))
-    angle_c = 360 - angle_a - angle_b
 
+
+def triangle(x, y, sd_lngth_a, sd_lngth_b, sd_lngth_c, angle_a, angle_b, angle_c, angle_main, fill_clr, brdr_clr,
+             brdr_wdth):
+    '''
+    :param x: X coordinate
+    :param y: Y coordinate
+    :param sd_lngth_a: A side length
+    :param sd_lngth_b: B side length
+    :param sd_lngth_c: C side length
+    :param angle_a: A angle
+    :param angle_b: B angle
+    :param angle_c: C angle
+    :param angle_main: Triangle rotation angle
+    :param fill_clr: Fill color
+    :param brdr_clr: Border color
+    :param brdr_wdth: Border width
+    :return: None
+    '''
     turtle.pu()
 
     turtle.color(brdr_clr, fill_clr)
@@ -45,10 +58,10 @@ def triangle(x, y, sd_lngth_a, sd_lngth_b, sd_lngth_c, angle_main, fill_clr, brd
 
     turtle.pd()
 
-    turtle.lt(angle_main)
+    turtle.rt(angle_main)
 
     turtle.fd(sd_lngth_b)
-    turtle.rt(angle_a)
+    turtle.rt(180 - angle_a)
     turtle.fd(sd_lngth_c)
     turtle.rt(180 - angle_b)
     turtle.fd(sd_lngth_a)
