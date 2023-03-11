@@ -1,9 +1,9 @@
 '''
 Title: eto rossiya!!!
 Group:
-Popov I.
-Fedyakin D.
-Fisher D.
+Popov I. 50%
+Fedyakin D. 55%
+Fisher D. 70%
 '''
 
 import turtle as turtle
