@@ -171,16 +171,16 @@ def carrots():
     '''
 
     #first carrot
-    triangle(-330, -250, 85, 44, 85, 75, 30, -60, 'limegreen', 'black', 1) #first carrot tops
-    triangle(-265, -300, 135, 70, 135, 75, 30, -60, 'orangered', 'black', 1) #first carrot
+    triangle(-330, -250, 85, 44, 85, 75, 30, -60, 'limegreen', 'black', 2) #first carrot tops
+    triangle(-265, -300, 135, 70, 135, 75, 30, -60, 'orangered', 'black', 2) #first carrot
 
     #second carrot
-    triangle(240, -270, 85, 44, 85, 75, 30, 75, 'limegreen', 'black', 1) #second carrot tops
-    triangle(160, -280, 135, 70, 135, 75, 30, 75, 'orangered', 'black', 1) #second carrot
+    triangle(240, -270, 85, 44, 85, 75, 30, 75, 'limegreen', 'black', 2) #second carrot tops
+    triangle(160, -280, 135, 70, 135, 75, 30, 75, 'orangered', 'black', 2) #second carrot
 
     #third carrot
-    triangle(180, -150, 85, 44, 85, 75, 30, 40, 'limegreen', 'black', 1) #third carrot tops
-    triangle(120, -200, 135, 70, 135, 75, 30, 40, 'orangered', 'black', 1) #third carrot
+    triangle(180, -150, 85, 44, 85, 75, 30, 40, 'limegreen', 'black', 2) #third carrot tops
+    triangle(120, -200, 135, 70, 135, 75, 30, 40, 'orangered', 'black', 2) #third carrot
 
 def grass():
     '''
@@ -190,12 +190,12 @@ def grass():
     '''
     
     #grass
-    triangle(-130, -250, 50, 18, 50, 80, 20, 180, 'palegreen4', 'black', 1)
-    triangle(-50, -200, 50, 70, 50, 45, 90, 60, 'palegreen4', 'black', 1)
-    triangle(-270, -180, 40, 40, 40, 60, 60, 180, 'palegreen4', 'black', 1)
-    triangle(-220, -180, 60, 60, 60, 60, 60, 180, 'palegreen4', 'black', 1)
-    triangle(300, -100, 20, 20, 20, 60, 60, 180, 'palegreen4', 'black', 1)
-    triangle(327, -100, 40, 27, 40, 70, 40, 180, 'palegreen4', 'black', 1)
+    triangle(-130, -250, 50, 18, 50, 80, 20, 180, 'palegreen4', 'black', 2)
+    triangle(-50, -200, 50, 70, 50, 45, 90, 60, 'palegreen4', 'black', 2)
+    triangle(-270, -180, 40, 40, 40, 60, 60, 180, 'palegreen4', 'black', 2)
+    triangle(-220, -180, 60, 60, 60, 60, 60, 180, 'palegreen4', 'black', 2)
+    triangle(300, -100, 20, 20, 20, 60, 60, 180, 'palegreen4', 'black', 2)
+    triangle(327, -100, 40, 27, 40, 70, 40, 180, 'palegreen4', 'black', 2)
 
 def head():
     '''
