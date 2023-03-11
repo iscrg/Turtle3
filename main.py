@@ -20,6 +20,8 @@ turtle.shape('turtle')
 def triangle(x, y, sd_lngth_a, sd_lngth_b, sd_lngth_c, angle_a, angle_b, angle_main, fill_clr, brdr_clr,
              brdr_wdth):
     '''
+    responsible person: Popov I.
+
     :param x: X coordinate
     :param y: Y coordinate
     :param sd_lngth_a: A side length
@@ -238,6 +240,15 @@ def head():
 
 
 def body():
+    '''
+    responsible person: Popov I.
+    rabit's body, legs, hands, tale
+    :return: None
+    '''
+
+    # left hand
+    ellipse(130, -140, 33, 23, 0, "LightGray", "black", 2)
+
     # body
     ellipse(20, -60, 150, 110, 10, "White", "black", 2)  
     ellipse(16, -33, 140, 82, 10, "LightGray", "black", 2)  
@@ -248,6 +259,9 @@ def body():
     # leg
     ellipse(-75, -155, 50, 20, 165, "LightGray", "black", 2)
     ellipse(-85, -85, 70, 70, 0, "LightGray", "black", 2)
+
+    # right hand
+    ellipse(70, -150, 38, 28, 0, "LightGray", "black", 2)
 
 
 
@@ -263,6 +277,7 @@ def main():
     trees()
     body()
     head()
+
     turtle.done()
 
 if __name__ == '__main__':
