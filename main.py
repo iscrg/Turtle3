@@ -121,6 +121,47 @@ def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
         turtle.rt(90)
     turtle.end_fill()
 
+def head():
+    '''
+    responsible person: Fisher D.
+    rabbit's head
+    :return: None
+    '''
+
+    ellipse(70, 160, 35, 100, 23, "LightGrey", "black", 2)  # rabbit's left outer ear
+    ellipse(80, 139, 28, 80, 23, "LightPink", "black", 2)  # rabbit's left inner ear
+
+    ellipse(225, 175, 35, 100, -15, "LightGrey", "black", 2)  # rabbit's right outer ear
+    ellipse(219, 152, 28, 80, -15, "LightPink", "black", 2)  # rabbit's right inner ear
+
+    ellipse(159, 23, 95, 95, 0, "LightGrey", "black", 2)  # rabbit's head base
+
+    ellipse(125, 19, 20, 30, 2, "white", "black", 2)  # rabbit's white of left eye
+    ellipse(125, 15, 13, 13, 0, "blue4", "blue4", 2)  # rabbit's left iris
+    ellipse(125, 15, 10, 10, 0, "black", "black", 2)  # rabbit's pupil of left eye
+
+    ellipse(201, 21, 20, 30, 2, "white", "black", 2)  # rabbit's white of right eye
+    ellipse(201, 17, 13, 13, 0, "blue4", "blue4", 2)  # rabbit's right iris
+    ellipse(201, 17, 10, 10, 0, "black", "black", 2)  # rabbit's pupil of right eye
+
+    ellipse(163, -33, 20, 20, 0, "white", "black", 1)  # rabbit's lip contour
+    ellipse(163, -33, 17, 17, 0, "red", "black", 1)  # rabbit's mouth
+
+    ellipse(163, -13, 54, 30, 2, "white", "black", 2)  # rabbit's nose base
+    ellipse(163, -1, 18, 6, 2, "black", "black", 2)  # rabbit's nose
+
+    rectangle(162, -1, 2, 30, 0, "black", "black", 1)  # rabbit's nose bridge
+
+    # right side of the rabbit's whiskers
+    ellipse(180, -16, 2, 2, 0, "black", "black", 1)
+    ellipse(194, -10, 2, 2, 0, "black", "black", 1)
+    ellipse(194, -22, 2, 2, 0, "black", "black", 1)
+
+    # left side of the rabbit's whiskers
+    ellipse(143, -16, 2, 2, 0, "black", "black", 1)
+    ellipse(129, -10, 2, 2, 0, "black", "black", 1)
+    ellipse(129, -22, 2, 2, 0, "black", "black", 1)
+
 def main():
     '''
     Main function
@@ -134,12 +175,12 @@ def main():
     rectangle(-220, 150, 15, 105, 0, 'brown', 'black', 2)
     rectangle(-60, 85, 20, 20, 0, 'brown', 'black', 1)
     rectangle(300, 90, 20, 20, 0, 'brown', 'black', 1)
-    ellipse(-215,250,100,100,0,'chartreuse3','black',2)
+    ellipse(-215, 250, 100, 100, 0, 'chartreuse3', 'black', 2)
 
-    ellipse(-270,255,20,20,0,'red','black',2)
-    ellipse(-205,210,20,20,0,'red','black',2)
-    ellipse(-160,260,20,20,0,'red','black',2)
-    ellipse(-205,300,20,20,0,'red','black',2)
+    ellipse(-270, 255, 20, 20, 0, 'red', 'black', 2)
+    ellipse(-205, 210, 20, 20, 0, 'red', 'black', 2)
+    ellipse(-160, 260, 20, 20, 0, 'red', 'black', 2)
+    ellipse(-205, 300, 20, 20, 0, 'red', 'black', 2)
 
     triangle(-225, 40, 115, 130, 115, 55, 70, 180, 'dark green', 'black', 3)
     triangle(-20, 85, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)
@@ -162,39 +203,9 @@ def main():
     triangle(300, -100, 20, 20, 20, 60, 60, 180, 'palegreen4', 'black', 1)
     triangle(327, -100, 40, 27, 40, 70, 40, 180, 'palegreen4', 'black', 1)
 
-    ellipse(20, -60, 150, 110, 10, "LightGrey", "black", 2)
+    ellipse(20, -60, 150, 110, 10, "LightGrey", "black", 2)  # rabbit's body
 
-    ellipse(70, 160, 35, 100, 23, "LightGrey", "black", 2)
-    ellipse(80, 139, 28, 80, 23, "LightPink", "black", 2)
-
-    ellipse(225, 175, 35, 100, -15, "LightGrey", "black", 2)
-    ellipse(219, 152, 28, 80, -15, "LightPink", "black", 2)
-
-    ellipse(159, 23, 95, 95, 0, "LightGrey", "black", 2)
-
-    ellipse(125, 19, 20, 30, 2, "white", "black", 2)
-    ellipse(125, 15, 13, 13, 0, "blue4", "blue4", 2)
-    ellipse(125, 15, 10, 10, 0, "black", "black", 2)
-
-    ellipse(201, 21, 20, 30, 2, "white", "black", 2)
-    ellipse(201, 17, 13, 13, 0, "blue4", "blue4", 2)
-    ellipse(201, 17, 10, 10, 0, "black", "black", 2)
-
-    ellipse(163, -33, 20,20, 0, "white", "black",1)
-    ellipse(163, -33, 17, 17, 0, "red", "black", 1)
-
-    ellipse(163, -13, 54, 30, 2, "white", "black", 2)
-    ellipse(163, -1, 18, 6, 2, "black", "black", 2)
-
-    rectangle(162, -1, 2, 30, 0, "black", "black", 1)
-
-    ellipse(180, -16, 2, 2, 0, "black", "black", 1)
-    ellipse(194, -10, 2, 2, 0, "black", "black", 1)
-    ellipse(194, -22, 2, 2, 0, "black", "black", 1)
-
-    ellipse(143, -16, 2, 2, 0, "black", "black", 1)
-    ellipse(129, -10, 2, 2, 0, "black", "black", 1)
-    ellipse(129, -22, 2, 2, 0, "black", "black", 1)
+    head()
 
     turtle.done()
 
