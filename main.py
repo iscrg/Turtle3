@@ -165,8 +165,17 @@ def head():
 
 
 def body():
-    ellipse(20, -60, 150, 110, 10, "White", "black", 2)  # rabbit's body
-    ellipse(20, -40, 150, 90, 10, "LightGray", "black", 2)  
+    # body
+    ellipse(20, -60, 150, 110, 10, "White", "black", 2)  
+    ellipse(16, -33, 140, 82, 10, "LightGray", "black", 2)  
+
+    # tale
+    ellipse(-150, -45, 33, 33, 0, "White", "black", 2)
+
+    # leg
+    ellipse(-75, -155, 50, 20, 165, "LightGray", "black", 2)
+    ellipse(-85, -85, 70, 70, 0, "LightGray", "black", 2)
+
 
 
 def main():
