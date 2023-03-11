@@ -128,8 +128,8 @@ def background():
     :return: None
     '''
 
-    rectangle(-400, 400, 800, 300, 0, 'lightskyblue', '', 0)
-    rectangle(-400, 100, 800, 500, 0, 'olivedrab3', '', 0)
+    rectangle(-400, 400, 800, 300, 0, 'lightskyblue', '', 0) #sky in the background
+    rectangle(-400, 100, 800, 500, 0, 'olivedrab3', '', 0) #field in the background
 
 def trees():
     '''
@@ -138,29 +138,28 @@ def trees():
     :return: None
     '''
 
-    rectangle(-305, 40, 30, 40, 0, 'brown', 'black', 3)
-    rectangle(-220, 150, 15, 105, 0, 'brown', 'black', 2)
-    rectangle(-60, 85, 20, 20, 0, 'brown', 'black', 1)
-    rectangle(300, 90, 20, 20, 0, 'brown', 'black', 1)
-    ellipse(-215, 250, 100, 100, 0, 'chartreuse3', 'black', 2)
-    triangle(-225, 40, 115, 130, 115, 55, 70, 180, 'dark green', 'black', 3)
-    triangle(-20, 85, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)
-    triangle(-20, 138, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)
-    triangle(340, 90, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)
-    triangle(340, 143, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)
-    triangle(340, 196, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)
+    #tree with apples
+    rectangle(-220, 150, 15, 105, 0, 'brown', 'black', 2) #tree trunk
+    ellipse(-215, 250, 100, 100, 0, 'chartreuse3', 'black', 2) #tree foliage
+    ellipse(-270, 255, 20, 20, 0, 'red', 'black', 2) #first apple
+    ellipse(-205, 210, 20, 20, 0, 'red', 'black', 2) #second apple
+    ellipse(-160, 260, 20, 20, 0, 'red', 'black', 2) #third apple
+    ellipse(-205, 300, 20, 20, 0, 'red', 'black', 2) #fourth apple
 
-def apples():
-    '''
-    responsible person: Fedyakin D.
-    apples on tree
-    :return: None
-    '''
-        
-    ellipse(-270, 255, 20, 20, 0, 'red', 'black', 2)
-    ellipse(-205, 210, 20, 20, 0, 'red', 'black', 2)
-    ellipse(-160, 260, 20, 20, 0, 'red', 'black', 2)
-    ellipse(-205, 300, 20, 20, 0, 'red', 'black', 2)
+    #tree with dark green foliage
+    rectangle(-305, 40, 30, 40, 0, 'brown', 'black', 3) #tree trunk
+    triangle(-225, 40, 115, 130, 115, 55, 70, 180, 'dark green', 'black', 3) #tree foliage
+
+    #two-level spruce
+    rectangle(-60, 85, 20, 20, 0, 'brown', 'black', 1) #tree trunk
+    triangle(-20, 85, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2) #first spruce level
+    triangle(-20, 138, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2) #second spruce level
+
+    #three-level spruce
+    rectangle(300, 90, 20, 20, 0, 'brown', 'black', 1) #tree trunk
+    triangle(340, 90, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2) #first spruce level
+    triangle(340, 143, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2) #second spruce level
+    triangle(340, 196, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2) #third spruce level
 
 def carrots():
     '''
@@ -169,12 +168,17 @@ def carrots():
     :return: None
     '''
 
-    triangle(-330, -250, 85, 44, 85, 75, 30, -60, 'limegreen', 'black', 1)
-    triangle(-265, -300, 135, 70, 135, 75, 30, -60, 'orangered', 'black', 1)
-    triangle(240, -270, 85, 44, 85, 75, 30, 75, 'limegreen', 'black', 1)
-    triangle(160, -280, 135, 70, 135, 75, 30, 75, 'orangered', 'black', 1)
-    triangle(180, -150, 85, 44, 85, 75, 30, 40, 'limegreen', 'black', 1)
-    triangle(120, -200, 135, 70, 135, 75, 30, 40, 'orangered', 'black', 1)
+    #first carrot
+    triangle(-330, -250, 85, 44, 85, 75, 30, -60, 'limegreen', 'black', 1) #first carrot tops
+    triangle(-265, -300, 135, 70, 135, 75, 30, -60, 'orangered', 'black', 1) #first carrot
+
+    #second carrot
+    triangle(240, -270, 85, 44, 85, 75, 30, 75, 'limegreen', 'black', 1) #second carrot tops
+    triangle(160, -280, 135, 70, 135, 75, 30, 75, 'orangered', 'black', 1) #second carrot
+
+    #third carrot
+    triangle(180, -150, 85, 44, 85, 75, 30, 40, 'limegreen', 'black', 1) #third carrot tops
+    triangle(120, -200, 135, 70, 135, 75, 30, 40, 'orangered', 'black', 1) #third carrot
 
 def grass():
     '''
@@ -183,6 +187,7 @@ def grass():
     :return: None
     '''
     
+    #grass
     triangle(-130, -250, 50, 18, 50, 80, 20, 180, 'palegreen4', 'black', 1)
     triangle(-50, -200, 50, 70, 50, 45, 90, 60, 'palegreen4', 'black', 1)
     triangle(-270, -180, 40, 40, 40, 60, 60, 180, 'palegreen4', 'black', 1)
@@ -247,7 +252,6 @@ def main():
     grass()
     carrots()
     trees()
-    apples()
     body()
     head()
     turtle.done()
