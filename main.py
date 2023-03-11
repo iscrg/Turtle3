@@ -1,5 +1,5 @@
 '''
-Title: Rabbit on the field
+Title: Rabbit on the field!
 Group:
 Popov I. 50%
 Fedyakin D. 55%
