@@ -1,5 +1,5 @@
 '''
-Title: eto rossiya!!!
+Title: Rabbit on the field
 Group:
 Popov I. 50%
 Fedyakin D. 55%
