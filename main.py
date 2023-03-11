@@ -121,6 +121,7 @@ def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
         turtle.rt(90)
     turtle.end_fill()
 
+
 def head():
     '''
     responsible person: Fisher D.
@@ -161,6 +162,12 @@ def head():
     ellipse(143, -16, 2, 2, 0, "black", "black", 1)
     ellipse(129, -10, 2, 2, 0, "black", "black", 1)
     ellipse(129, -22, 2, 2, 0, "black", "black", 1)
+
+
+def body():
+    ellipse(20, -60, 150, 110, 10, "White", "black", 2)  # rabbit's body
+    ellipse(20, -40, 150, 90, 10, "LightGray", "black", 2)  
+
 
 def main():
     '''
@@ -203,9 +210,9 @@ def main():
     triangle(300, -100, 20, 20, 20, 60, 60, 180, 'palegreen4', 'black', 1)
     triangle(327, -100, 40, 27, 40, 70, 40, 180, 'palegreen4', 'black', 1)
 
-    ellipse(20, -60, 150, 110, 10, "LightGrey", "black", 2)  # rabbit's body
-
+    body()
     head()
+    
 
     turtle.done()
 
