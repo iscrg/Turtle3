@@ -17,21 +17,6 @@ turtle.speed(0)
 turtle.shape('turtle')
 
 
-def triangle(x, y, sd_lngth_a, sd_lngth_b, sd_lngth_c, angle_main, fill_clr, brdr_clr, brdr_wdth):
-    '''
-    :param x: X coordinate
-    :param y: Y coordinate
-    :param sd_lngth_a: A side length
-    :param sd_lngth_b: B side length
-    :param sd_lngth_c: C side length
-    :param angle_main: The angle of rotation of the figure
-    :param fill_clr: Fill color
-    :param brdr_clr: Border color
-    :param brdr_wdth: Border width
-    :return: None
-    '''
-
-
 def triangle(x, y, sd_lngth_a, sd_lngth_b, sd_lngth_c, angle_a, angle_b, angle_main, fill_clr, brdr_clr,
              brdr_wdth):
     '''
