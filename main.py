@@ -29,7 +29,6 @@ def triangle(x, y, sd_lngth_a, sd_lngth_b, sd_lngth_c, angle_a, angle_b, angle_m
     :param sd_lngth_c: C side length
     :param angle_a: A angle
     :param angle_b: B angle
-    :param angle_c: C angle
     :param angle_main: Triangle rotation angle
     :param fill_clr: Fill color
     :param brdr_clr: Border color
@@ -68,7 +67,7 @@ def ellipse(x, y, a, b, angle, fill_color, border_color, border_width):
     :param angle: angle of inclination
     :param fill_color: Fill color
     :param border_color: Border color
-    :border_width: Border width
+    :param border_width: Border width
     :return: None
     '''
 
@@ -104,7 +103,7 @@ def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
     :param angle: The angle from which the figure starts to turn
     :param fill_color: Fill color
     :param border_color: Border color
-    :border_width: Border width
+    :param border_width: Border width
     :return: None
     '''
 
@@ -123,6 +122,7 @@ def rectangle(x, y, a, b, angle, fill_color, border_color, border_width):
         turtle.rt(90)
     turtle.end_fill()
 
+
 def background():
     '''
     responsible person: Fedyakin D.
@@ -130,8 +130,9 @@ def background():
     :return: None
     '''
 
-    rectangle(-400, 400, 800, 300, 0, 'lightskyblue', '', 0)  # sky in the background
-    rectangle(-400, 100, 800, 500, 0, 'olivedrab3', '', 0)  # field in the background
+    rectangle(-400, 400, 800, 300, 0, 'lightskyblue', '', 0)                    # sky in the background
+    rectangle(-400, 100, 800, 500, 0, 'olivedrab3', '', 0)                      # field in the background
+
 
 def trees():
     '''
@@ -141,27 +142,28 @@ def trees():
     '''
 
     # tree with apples
-    rectangle(-220, 150, 15, 105, 0, 'brown', 'black', 2)  # tree trunk
-    ellipse(-215, 250, 100, 100, 0, 'chartreuse3', 'black', 2)  # tree foliage
-    ellipse(-270, 255, 20, 20, 0, 'red', 'black', 2)  # first apple
-    ellipse(-205, 210, 20, 20, 0, 'red', 'black', 2)  # second apple
-    ellipse(-160, 260, 20, 20, 0, 'red', 'black', 2)  # third apple
-    ellipse(-205, 300, 20, 20, 0, 'red', 'black', 2)  # fourth apple
+    rectangle(-220, 150, 15, 105, 0, 'brown', 'black', 2)                       # tree trunk
+    ellipse(-215, 250, 100, 100, 0, 'chartreuse3', 'black', 2)                  # tree foliage
+    ellipse(-270, 255, 20, 20, 0, 'red', 'black', 2)                            # first apple
+    ellipse(-205, 210, 20, 20, 0, 'red', 'black', 2)                            # second apple
+    ellipse(-160, 260, 20, 20, 0, 'red', 'black', 2)                            # third apple
+    ellipse(-205, 300, 20, 20, 0, 'red', 'black', 2)                            # fourth apple
 
     # tree with dark green foliage
-    rectangle(-305, 40, 30, 40, 0, 'brown', 'black', 3)  # tree trunk
-    triangle(-225, 40, 115, 130, 115, 55, 70, 180, 'dark green', 'black', 3)  # tree foliage
+    rectangle(-305, 40, 30, 40, 0, 'brown', 'black', 3)                         # tree trunk
+    triangle(-225, 40, 115, 130, 115, 55, 70, 180, 'dark green', 'black', 3)    # tree foliage
 
     # two-level spruce
-    rectangle(-60, 85, 20, 20, 0, 'brown', 'black', 1)  # tree trunk
-    triangle(-20, 85, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)  # first spruce level
-    triangle(-20, 138, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)  # second spruce level
+    rectangle(-60, 85, 20, 20, 0, 'brown', 'black', 1)                          # tree trunk
+    triangle(-20, 85, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)        # first spruce level
+    triangle(-20, 138, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)       # second spruce level
 
     # three-level spruce
-    rectangle(300, 90, 20, 20, 0, 'brown', 'black', 1)  # tree trunk
-    triangle(340, 90, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)  # first spruce level
-    triangle(340, 143, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)  # second spruce level
-    triangle(340, 196, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)  # third spruce level
+    rectangle(300, 90, 20, 20, 0, 'brown', 'black', 1)                          # tree trunk
+    triangle(340, 90, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)        # first spruce level
+    triangle(340, 143, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)       # second spruce level
+    triangle(340, 196, 60, 60, 60, 60, 60, 180, 'olivedrab3', 'black', 2)       # third spruce level
+
 
 def carrots():
     '''
@@ -171,16 +173,17 @@ def carrots():
     '''
 
     # first carrot
-    triangle(-330, -250, 85, 44, 85, 75, 30, -60, 'limegreen', 'black', 2)  # first carrot tops
-    triangle(-265, -300, 135, 70, 135, 75, 30, -60, 'orangered', 'black', 2)  # first carrot
+    triangle(-330, -250, 85, 44, 85, 75, 30, -60, 'limegreen', 'black', 2)      # first carrot tops
+    triangle(-265, -300, 135, 70, 135, 75, 30, -60, 'orangered', 'black', 2)    # first carrot
 
     # second carrot
-    triangle(240, -270, 85, 44, 85, 75, 30, 75, 'limegreen', 'black', 2)  # second carrot tops
-    triangle(160, -280, 135, 70, 135, 75, 30, 75, 'orangered', 'black', 2)  # second carrot
+    triangle(240, -270, 85, 44, 85, 75, 30, 75, 'limegreen', 'black', 2)        # second carrot tops
+    triangle(160, -280, 135, 70, 135, 75, 30, 75, 'orangered', 'black', 2)      # second carrot
 
     # third carrot
-    triangle(180, -150, 85, 44, 85, 75, 30, 40, 'limegreen', 'black', 2)  # third carrot tops
-    triangle(120, -200, 135, 70, 135, 75, 30, 40, 'orangered', 'black', 2)  # third carrot
+    triangle(180, -150, 85, 44, 85, 75, 30, 40, 'limegreen', 'black', 2)        # third carrot tops
+    triangle(120, -200, 135, 70, 135, 75, 30, 40, 'orangered', 'black', 2)      # third carrot
+
 
 def grass():
     '''
@@ -197,6 +200,7 @@ def grass():
     triangle(300, -100, 20, 20, 20, 60, 60, 180, 'palegreen4', 'black', 2)
     triangle(327, -100, 40, 27, 40, 70, 40, 180, 'palegreen4', 'black', 2)
 
+
 def head():
     '''
     responsible person: Fisher D.
@@ -204,29 +208,29 @@ def head():
     :return: None
     '''
 
-    ellipse(70, 160, 35, 100, 23, "LightGrey", "black", 2)  # rabbit's left outer ear
-    ellipse(80, 139, 28, 80, 23, "LightPink", "black", 2)  # rabbit's left inner ear
+    ellipse(70, 160, 35, 100, 23, "LightGrey", "black", 2)                      # rabbit's left outer ear
+    ellipse(80, 139, 28, 80, 23, "LightPink", "black", 2)                       # rabbit's left inner ear
 
-    ellipse(225, 175, 35, 100, -15, "LightGrey", "black", 2)  # rabbit's right outer ear
-    ellipse(219, 152, 28, 80, -15, "LightPink", "black", 2)  # rabbit's right inner ear
+    ellipse(225, 175, 35, 100, -15, "LightGrey", "black", 2)                    # rabbit's right outer ear
+    ellipse(219, 152, 28, 80, -15, "LightPink", "black", 2)                     # rabbit's right inner ear
 
-    ellipse(159, 23, 95, 95, 0, "LightGrey", "black", 2)  # rabbit's head base
+    ellipse(159, 23, 95, 95, 0, "LightGrey", "black", 2)                        # rabbit's head base
 
-    ellipse(125, 19, 20, 30, 2, "white", "black", 2)  # rabbit's white of left eye
-    ellipse(125, 15, 13, 13, 0, "blue4", "blue4", 2)  # rabbit's left iris
-    ellipse(125, 15, 10, 10, 0, "black", "black", 2)  # rabbit's pupil of left eye
+    ellipse(125, 19, 20, 30, 2, "white", "black", 2)                            # rabbit's white of left eye
+    ellipse(125, 15, 13, 13, 0, "blue4", "blue4", 2)                            # rabbit's left iris
+    ellipse(125, 15, 10, 10, 0, "black", "black", 2)                            # rabbit's pupil of left eye
 
-    ellipse(201, 21, 20, 30, 2, "white", "black", 2)  # rabbit's white of right eye
-    ellipse(201, 17, 13, 13, 0, "blue4", "blue4", 2)  # rabbit's right iris
-    ellipse(201, 17, 10, 10, 0, "black", "black", 2)  # rabbit's pupil of right eye
+    ellipse(201, 21, 20, 30, 2, "white", "black", 2)                            # rabbit's white of right eye
+    ellipse(201, 17, 13, 13, 0, "blue4", "blue4", 2)                            # rabbit's right iris
+    ellipse(201, 17, 10, 10, 0, "black", "black", 2)                            # rabbit's pupil of right eye
 
-    ellipse(163, -33, 20, 20, 0, "white", "black", 1)  # rabbit's lip contour
-    ellipse(163, -33, 17, 17, 0, "red", "black", 1)  # rabbit's mouth
+    ellipse(163, -33, 20, 20, 0, "white", "black", 1)                           # rabbit's lip contour
+    ellipse(163, -33, 17, 17, 0, "red", "black", 1)                             # rabbit's mouth
 
-    ellipse(163, -13, 54, 30, 2, "white", "black", 2)  # rabbit's nose base
-    ellipse(163, -1, 18, 6, 2, "black", "black", 2)  # rabbit's nose
+    ellipse(163, -13, 54, 30, 2, "white", "black", 2)                           # rabbit's nose base
+    ellipse(163, -1, 18, 6, 2, "black", "black", 2)                             # rabbit's nose
 
-    rectangle(162, -1, 2, 30, 0, "black", "black", 1)  # rabbit's nose bridge
+    rectangle(162, -1, 2, 30, 0, "black", "black", 1)                           # rabbit's nose bridge
 
     # right side of the rabbit's whiskers
     ellipse(180, -16, 2, 2, 0, "black", "black", 1)
@@ -264,7 +268,6 @@ def body():
     ellipse(70, -150, 38, 28, 0, "LightGray", "black", 2)
 
 
-
 def main():
     '''
     Main function
@@ -280,6 +283,6 @@ def main():
 
     turtle.done()
 
+
 if __name__ == '__main__':
     main()
-
